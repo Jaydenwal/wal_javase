@@ -12,9 +12,12 @@ public class Manage
 {
 	// 在Manager类中去访问Person类中的属性
 
-			
+			//this 不能使用在静态方法里
 			public static void main(String[] args)
 			{
+				//对实例变量的访问，就是访问值或是设置值
+				//必须首先创建这个类的对象
+			    //Person是这个创建对象的模板
 				Person p2 = new Person();
 				p2.setName("王安乐");
 				p2.setAge(20);
